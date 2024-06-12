@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB.com - Login</title>
+  <link rel="stylesheet" href="login.css"> 
+  <script src="valid.js"></script>
+  <!-- <link rel="stylesheet" href="loginc.html"> -->
+
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="site-title">WEB.com</h1>
+    </header>
+    <main class="main-content">
+      <form action="loginc.html"  class="login-form" >
+        <h2>Welcome back!</h2>
+        <hr class="divider"  />
+        <p class="form-text">Or login with your ID</p>
+        <fieldset class="form-group " onsubmit ="return validated()">
+          <label for="email" class="form-label">Email ID:</label>
+          <input type="email" id="email" class="form-input" placeholder="Enter Email" required  name="email">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" id="password" class="form-input" placeholder="Password" required  name="password">
+        </fieldset>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <button type="submit" class="btn btn-primary">Login <a href="loginc.html"></a></button>
+        <hr class="divider" />
+        <p class="form-text">Not registered yet? <a href="sign.html">Sign Up</a></p>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
